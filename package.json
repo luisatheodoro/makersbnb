@@ -2,22 +2,18 @@
   "name": "makersbnb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luisatheodoro/makersbnb.git"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/luisatheodoro/makersbnb/issues"
-  },
-  "homepage": "https://github.com/luisatheodoro/makersbnb#readme",
   "dependencies": {
+    "bcrypt": "^3.0.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "concurrently": "^4.1.0",
@@ -27,6 +23,9 @@
     "mongoose": "^5.3.14",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "^2.1.1",
     "validator": "^10.9.0"
   },
   "devDependencies": {
