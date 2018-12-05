@@ -1,33 +1,27 @@
 import React, { Component } from "react";
-import {
-    Navbar,
-    NavbarToggler,
-    Container, NavbarBrand
-} from 'reactstrap';
+import { Navbar, NavbarToggler, Container, NavbarBrand } from "reactstrap";
 
 import { Link } from "react-router-dom";
 
 class AppNavbar2 extends Component {
-
   state = {
-        isOpen: false
-    };
+    isOpen: false
+  };
 
-    toggle = () => {
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
-    };
+  toggle = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  };
 
   render() {
     return (
-      <div className="navbar-fixed">
+      <div>
         <Navbar color="dark" dark expand="sm" className="mb-5">
           <Container>
-              <Link to='/'
-              classname="col s5 brand-logo center black-text">
+            <Link to="/">
               A Makers Company
-              </Link>
+            </Link>
           </Container>
         </Navbar>
       </div>

@@ -11,7 +11,7 @@ class Landing extends Component {
               <b>Welcome</b> to Makers Airbnb{" "}
             </h4>
             <p className="flow-text grey-text text-darken-1">
-              Please login or signup below
+              Please register or signup below
             </p>
             <br />
             <Link
